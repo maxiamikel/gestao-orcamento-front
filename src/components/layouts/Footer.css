@@ -1,0 +1,33 @@
+.footer {
+    bottom: 0;
+    position: fixed;
+    background-color: #555;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_footer {
+    display: flex;
+    flex-direction: flex-;
+    color: #DAA250;
+    align-items: center;
+    padding: 3em;
+}
+
+.item_footer {
+    margin-right: 1em;
+    list-style: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.item_footer a {
+    color: #DAA250;
+    text-decoration: none;
+}
+
+.item_footer a:hover {
+    color: #FFF;
+}
