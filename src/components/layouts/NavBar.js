@@ -8,8 +8,10 @@ function NavBar(){
              <FaAcquisitionsIncorporated className='logo'/>
             <ul className='menu'>
                 <li className='item'><Link to="/">Home</Link></li>
-                <li className='item'><Link to="/NewProject">Projetos</Link></li>
+                <li className='item'><Link to="/About">About Me</Link></li>
+                <li className='item'><Link to="/NewProject">Projets</Link></li>
                 <li className='item'><Link to="/Repports">Repport</Link></li>
+                <li className='item'><Link to="/Contact">Contact</Link></li>
             </ul>
         </div>
     );
