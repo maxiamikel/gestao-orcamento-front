@@ -1,0 +1,19 @@
+{
+    "projets": [],
+    "categorias": [{
+            "id": 1,
+            "nome": "Medicina",
+            "descripcao": "Coleção dos recursos da ciencia da medicina em geral"
+        },
+        {
+            "id": 2,
+            "nome": "TI",
+            "descripcao": "Coleção dos recursos de informatica em geral"
+        },
+        {
+            "id": 3,
+            "nome": "Banco de dados",
+            "descripcao": "Megulhar profondemene nas boas práticas de desenvolvimento dos bancos de dados"
+        }
+    ]
+}
