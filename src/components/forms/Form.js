@@ -8,22 +8,22 @@ import Select from './Secetc'
 import SubmitBtn from './SubmitBtn'
 
 function Form({btnLabel}){
-    const [categorias, setCategorias] = useState([]);
+   const [categorias, setCategorias] =  useState([]);
 
-    useEffect(() =>{
-            fetch("http://localhost:5000/categorias",{
-            method:"GET",
+   useEffect(() =>{
+
+        fetch('http://www.localhost:5000/categorias',{
+            method:'GET',
             headers:{
                 'Content-Type':'application/json'
             }
         })
         .then((resp) => resp.json())
-        .then((data) => {
+        .then((data)=> {
             setCategorias(data)
         })
         .catch((err) => console.log(err))
-
-    },[])
+   },[])
 
     return(
         <div>
@@ -46,8 +46,15 @@ function Form({btnLabel}){
                     text="Project owner name"
                     placeholder="Fill the project owner name"
                 />
-                <Select name="category_id" text="Select the project category" options={categorias}/>
-                <SubmitBtn text={btnLabel} />
+                <Select 
+                    name="category_id" 
+                    text="Select the project category" 
+                    options={categorias}
+                />
+
+                <SubmitBtn 
+                    text={btnLabel} 
+                />
             </form>
         </div>
     );

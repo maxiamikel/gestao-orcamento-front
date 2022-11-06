@@ -4,12 +4,12 @@ function Select({text,name,options,handleOneChange,value}){
         <div className="control_form ">
             <label htmlFor={name}>{text}:</label>
             <select name={name} id={name}>
-                <option>Select an option</option>
-                {options.map((option) => (
-                    <option value={option.id} key={option.id}>
-                        {option.nome}
-                    </option>
-                ))}
+                <option>{text}</option>
+               {options.map((option) =>(
+                <option value={option.id} key={option.id}>
+                   {option.id}- {option.nome}
+                </option>
+               ))}
             </select>
         </div>
     )
