@@ -12,10 +12,11 @@ function Form({btnLabel}){
 
    useEffect(() =>{
 
-        fetch('http://www.localhost:5000/categorias',{
+        fetch('http://localhost:1030/api/categorias/',{
             method:'GET',
             headers:{
-                'Content-Type':'application/json'
+                'Content-Type':'application/json',
+                
             }
         })
         .then((resp) => resp.json())
@@ -27,7 +28,8 @@ function Form({btnLabel}){
 
     return(
         <div>
-            <form className="form">
+            
+            <form className="form" >
                 <Input 
                     type="text"
                     name="name"

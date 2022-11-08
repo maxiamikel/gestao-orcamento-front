@@ -1,4 +1,4 @@
-
+import React,{useEffect, useState} from 'react';
 import { Link, Route, Routes} from 'react-router-dom';
 import './App.css'
 import Home from './components/pages/home/Home'
@@ -9,7 +9,14 @@ import Container from './components/layouts/Container';
 import About from './components/pages/about/About';
 import Footer from './components/layouts/Footer';
 import NavBar from './components/layouts/NavBar';
+
 function App() {
+
+  useEffect( () =>{
+    fetch()
+    .then()
+    .then()
+  },[])
   return(
     <div > 
       <router>
