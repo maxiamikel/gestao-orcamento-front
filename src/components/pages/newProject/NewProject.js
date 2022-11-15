@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom'
 
-import './NewProject.css'
+import './NewOrcamento.css'
 import Form from '../../forms/Form'
 function NewProject(){
 

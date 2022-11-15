@@ -11,3 +11,11 @@ body,
     background-color: #efefef;
     height: 100%;
 }
+
+.table {
+    margin: 0 auto;
+}
+
+.table tr {
+    border: 1px solid #333;
+}

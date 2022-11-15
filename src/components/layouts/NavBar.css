@@ -12,6 +12,7 @@
     color: #DAA250;
     align-items: center;
     justify-content: center;
+    margin-right: 60px;
 }
 
 .item {
@@ -34,4 +35,5 @@
 .logo {
     font-size: 5em;
     color: #D2691E;
+    margin-left: 60px;
 }

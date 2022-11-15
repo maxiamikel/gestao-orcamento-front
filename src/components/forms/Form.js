@@ -15,8 +15,7 @@ function Form({btnLabel}){
         fetch('http://localhost:1030/api/categorias/',{
             method:'GET',
             headers:{
-                'Content-Type':'application/json',
-                
+                'Content-Type':'application/json'
             }
         })
         .then((resp) => resp.json())

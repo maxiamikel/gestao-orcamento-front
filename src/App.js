@@ -11,11 +11,12 @@ import Footer from './components/layouts/Footer';
 import NavBar from './components/layouts/NavBar';
 
 function App() {
+  const [categorias, setCategorias] =  useState([]);
 
   useEffect( () =>{
-    fetch()
-    .then()
-    .then()
+    fetch('http://localhost:1030/api/categorias/')
+    .then(data =>data.json())
+    .then(data_conv => setCategorias(data_conv))
   },[])
   return(
     <div > 
@@ -25,7 +26,7 @@ function App() {
         <Container className='main'>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/NewProject" element={<NewProject />} />
+            <Route exact path="/NewProject" element={<NewProject  />} />
             <Route exact path="/Repports" element={ <Repports /> } />
             <Route exact path="/About" element={<About />} />
             <Route exact path="/Contact" element={ <Contact />} />
